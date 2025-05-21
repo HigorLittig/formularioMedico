@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dr_Alessandro_Donatti.css">
+    <title>Formulário Médico Pré Consulta</title>
+
+</head>
+
+<body>
+    <h1>Clínica ITAG</h1>
+    <h2>Dr. Alessandro Xavier Donatti</h2>
+    <fieldset>
+        <form autocomplete="off">
+            <legend>Questionário Pré-Consulta</legend>
+            <label for="name" class="dados">Nome</label>
+            <input type="text" placeholder="Digite seu nome completo" required id="name" name="name">
+
+            <label for="data" class="dados">Data de Nascimento</label>
+            <input type="date" required id="data" name="data">
+
+            <label class="dados">Sexo</label>
+            <label>
+                <input type="radio" name="escolha" value="M">Masculino
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="F">Feminino
+            </label>
+
+            <label for="CPF" class="dados">CPF</label>
+            <input type="number" placeholder="Digite seu CPF (somente números)" required id="CPF" name="CPF">
+
+
+
+            <label for="email" class="dados">E-mail</label>
+            <input type="email" placeholder="Digite um email válido" required name="email">
+
+            <label for="celular" class="dados">Celular</label>
+            <input type="number" placeholder="Número de celular" required name="celular">
+
+            <label for="endereco" class="dados">Endereço</label>
+            <input type="adress" placeholder="Digite seu endereço completo" required id="endereco" name="name">
+
+            <label for="text" class="dados">Possui plano de Saúde?</label>
+            <label>
+                <input type="radio" name="escolha" value="s">Sim
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="n">Não
+            </label>
+
+            <label for="text" class="dados">Como conheceu o Dr. Alessandro Xavir Donatti?</label>
+
+            <label>
+                <input type="radio" name="escolha" value="encaminhamento">Encaminhamento Médico
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="Redes Sociais">Redes Sociais
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="Google">Google
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="email-marketing">E-mail Marketing
+            </label>
+            <label>
+                <input type="radio" name="escolha" value="s"><input type="text" placeholder="Outros">
+            </label>
+
+
+            <label class="dados">Assunto
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList">
+                    <option value="Agendar uma Consulta">
+                    <option value="Dúvidas">
+                    <option value="Elogios">
+                    <option value="Reclamações">
+                    <option value="Outros">
+                </datalist>
+            </label>
+
+
+            <label for="message" class="dados">Mensagem</label>
+            <textarea name="message" id="message" cols="30" rows="6" minlength="5" maxlength="1000" required></textarea>
+            <div>
+                <input type="submit" value="Enviar" class="btn" id="enviar">
+            </div>
+
+            <p id="mensagem"></p>
+
+            <script>
+                document.getElementById("enviar").addEventListener("click", function () {
+                    document.getElementById("enviar").textContent = "Enviado";
+                    document.getElementById("mensagem").textContent = "Enviado com sucesso!";
+                });
+            </script>
+
+
+
+        </form>
+    </fieldset>
+
+
+
+
+
+
+
+</body>
+
+</html>

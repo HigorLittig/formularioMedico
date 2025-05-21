@@ -1,0 +1,67 @@
+body{
+    background-color: #203357;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+}
+
+h1{
+    color: rgb(160, 144, 95);
+    margin-bottom: 0;
+}
+
+h2{
+    margin-top: 0;
+    color: rgb(160, 144, 95);
+}
+
+fieldset{
+    width: 380px;
+    
+    border: 2px solid rgb(160, 144, 95);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-size: 28px;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: 2px solid rgb(160, 144, 95);
+    width: 330px;
+}
+
+.dados{
+    margin-top: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+div{
+    display: flex;
+    justify-content: end;
+
+}
+
+.btn{
+    border-bottom: none;
+    margin:10px 0 15px;
+    padding: 15px;
+    background-color: rgb(160, 144, 95);;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+}
